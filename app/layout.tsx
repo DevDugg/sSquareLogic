@@ -1,6 +1,10 @@
-import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import "./globals.css";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const GrottaRegular = localFont({
   src: [
@@ -21,14 +25,11 @@ export const metadata: Metadata = {
   description: "SquareLogic",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={`${GrottaRegular.className} bg-BG`}>{children}</body>
     </html>
   );
 }
+
