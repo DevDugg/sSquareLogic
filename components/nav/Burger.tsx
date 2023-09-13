@@ -4,6 +4,7 @@ const Burger = () => {
   return (
     <div className="burger">
       <Image
+        loading="eager"
         src={"/burger.svg"}
         alt="Burger"
         width={48}

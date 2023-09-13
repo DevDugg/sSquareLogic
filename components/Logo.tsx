@@ -6,6 +6,7 @@ const Logo = () => {
   return (
     <Link href={"/"} className="logo flex items-center gap-4">
       <Image
+        loading="eager"
         src={"/logo.svg"}
         alt="Logo"
         height={24}
