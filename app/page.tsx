@@ -5,7 +5,10 @@ export default function Home() {
   return (
     <main className="main">
       <Nav />
-      <Hero />
+      <div className="flex flex-col gap-[120px] pb-[120px]">
+        <Hero />
+      </div>
     </main>
   );
 }
+
