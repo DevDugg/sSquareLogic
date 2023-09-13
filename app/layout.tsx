@@ -5,11 +5,11 @@ import localFont from "next/font/local";
 const GrottaRegular = localFont({
   src: [
     {
-      path: "/Grotta-Trial-Regular.otf",
-      weight: "400",
+      path: "../public/Grotta-Trial-Bold.otf",
+      weight: "700",
     },
     {
-      path: "/Grotta-Trial-Bold.otf",
+      path: "../public/Grotta-Trial-Regular.otf",
       weight: "400",
     },
   ],
@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={GrottaRegular.className}>{children}</body>
+      <body className={`${GrottaRegular.className} bg-BG`}>{children}</body>
     </html>
   );
 }
