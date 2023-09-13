@@ -3,15 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    "eslint:recommended",
-    "next",
-    "plugin:prettier/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:@next/eslint-plugin-next",
-    "plugin:eslint-config-next",
-  ],
+  extends: ["eslint:recommended", "next", "plugin:@typescript-eslint/recommended", "plugin:react-hooks/recommended"],
   overrides: [
     {
       env: {
