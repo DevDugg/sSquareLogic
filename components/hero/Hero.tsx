@@ -5,7 +5,7 @@ import Title from "./Title";
 
 const Hero = () => {
   return (
-    <div className="hero flex flex-col gap-[120px]">
+    <section className="hero flex flex-col gap-[120px]">
       <Container>
         <Title />
       </Container>
@@ -20,7 +20,7 @@ const Hero = () => {
           </div>
         </Container>
       </div>
-    </div>
+    </section>
   );
 };
 export default Hero;
