@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import Hero from "@/components/hero/Hero";
 import Nav from "@/components/nav/Nav";
 import Service from "@/components/service/Service";
@@ -10,6 +11,7 @@ export default function Home() {
         <Hero />
         <Service />
       </div>
+      <Footer />
     </main>
   );
 }
