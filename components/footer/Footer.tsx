@@ -3,6 +3,7 @@
 import { letter, sentence } from "@/animations/text.animation";
 
 import Container from "../Container";
+import FooterForm from "./FooterForm";
 import footer from "@/settings/data/footer";
 import { motion } from "framer-motion";
 import { v4 } from "uuid";
@@ -14,9 +15,9 @@ const Footer = () => {
         <h2 className="text-[64px] text-WHITE font-bold flex flex-col">
           {footer.title.map((item) => (
             <motion.span key={v4()} variants={sentence} initial="hidden" whileInView="visible">
-              {item.split("").map((char) => {
+              {item.split("").map((char, index) => {
                 return (
-                  <motion.span key={`char-${v4()}`} variants={letter}>
+                  <motion.span key={`char-${index}`} variants={letter}>
                     {char}
                   </motion.span>
                 );
@@ -24,6 +25,7 @@ const Footer = () => {
             </motion.span>
           ))}
         </h2>
+        <FooterForm />
       </Container>
     </footer>
   );
