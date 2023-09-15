@@ -10,7 +10,7 @@ import { v4 } from "uuid";
 const Footer = () => {
   return (
     <footer className="footer">
-      <Container className="flex items-center justify-between">
+      <Container className="flex items-center justify-between pb-[120px]">
         <h2 className="text-[64px] text-WHITE font-bold flex flex-col">
           {footer.title.map((item) => (
             <motion.span key={v4()} variants={sentence} initial="hidden" whileInView="visible">
