@@ -30,7 +30,7 @@ const Btn = ({ link = "", name, btn, onClick }: Props) => {
           onBlur={() => setIsFocused(false)}
           className="outline-none block py-4 px-6 bg-transparent rounded-2xl border border-solid border-MAIN text-base w-fit relative overflow-hidden"
         >
-          <span className="block z-10 relative">{name}</span>
+          <span className="block z-10 relative font-bold">{name}</span>
           <motion.div
             className="absolute left-0 top-0 w-full h-full bg-MAIN z-[-10]"
             variants={button}
@@ -58,7 +58,7 @@ const Btn = ({ link = "", name, btn, onClick }: Props) => {
           onBlur={() => setIsFocused(false)}
           className="outline-none block py-4 px-6 bg-transparent rounded-2xl border border-solid border-MAIN text-base w-fit relative overflow-hidden"
         >
-          <span className="block z-10 relative">{name}</span>
+          <span className="block z-10 relative font-bold">{name}</span>
           <motion.div
             className="absolute left-0 top-0 w-full h-full bg-MAIN z-[-10]"
             variants={button}
